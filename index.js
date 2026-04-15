@@ -7,11 +7,16 @@ function calculateTax(amount) {
 
 
 function convertToUpperCase (text) {
-    text = "money";
-    return text.toUpperCase();
+    text = "hello world";
+    if (!text) {
+        return 0;
+    } else {
+        return text.toUpperCase();
+    }
+    
 }
 
-// console.log(convertToUpperCase());
+console.log(convertToUpperCase());
 
 function findMaximum (numI, numII) {
     if (numI > numII) {
@@ -19,7 +24,7 @@ function findMaximum (numI, numII) {
     } else if (numII > numI) {
         return maximum = numII;
     } else 
-        return "Numbers are equal";       
+        return numI;       
 }
 
 // console.log(findMaximum(9, 9));
@@ -29,9 +34,9 @@ function isPalindrome(word) {
     let reversed = word.split('').reverse().join('');
 
     if (reversed === word) {
-        return word + " is a palindrome"
+        return true;
     } else {
-        return reversed + " is not a palindrome"
+        return false;
     }
 }
 
