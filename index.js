@@ -16,7 +16,7 @@ function convertToUpperCase (text) {
     
 }
 
-console.log(convertToUpperCase());
+// console.log(convertToUpperCase());
 
 function findMaximum (numI, numII) {
     if (numI > numII) {
